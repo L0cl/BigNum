@@ -5,7 +5,7 @@ BigNum is a Java class used for the computation of any positive integers, especi
     New_BigNum(int)
     BigNum* New_BigNum_By_String(char* strSequence)
     
-You can initiate a BigNum with an int or a sequence of char (string).
+You can initiate a BigNum with an integer or a sequence of char (string).
 
     BigNum* number = New_BigNum(100);
     BigNum* number2 = BigNum* New_BigNum_By_String("4891456418913542");
