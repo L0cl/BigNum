@@ -9,18 +9,18 @@ typedef struct BigNum {
         BigNum* Add(BigNum*, BigNum*)                            */
     struct BigNum* (*Add)(struct BigNum*, struct BigNum*);
 
-    /*  Sub returns the substraction between two BigNum,
+    /*  Sub returns the subtraction between two BigNum,
         the first minus the second in parameters.
         Return NULL if at least one of the parameters is NULL or the result is negative
         BigNum* SUb(BigNum*, BigNum*)                            */
     struct BigNum* (*Sub)(struct BigNum*, struct BigNum*);
 
-    /*  Mult returns the multiplition between two BigNum
+    /*  Mult returns the multiplication between two BigNum
         Return NULL if at least one of the parameters is NULL
         BigNum* Mult(BigNum*, BigNum*)                            */
     struct BigNum* (*Mult)(struct BigNum*, struct BigNum*);
 
-    /*  Add returns the divition between two BigNum
+    /*  Add returns the division between two BigNum
         Return NULL if at least one of the parameters is NULL or in case of a division by zero
         BigNum* Div(BigNum*, BigNum*)                            */
     struct BigNum* (*Div)(struct BigNum*, struct BigNum*);
@@ -41,14 +41,14 @@ typedef struct BigNum {
         int Compare(BigNum*, BigNum*)                         */
     int (*Compare)(struct BigNum*, struct BigNum*);
 
-    /*  Free tha allocated memory for a BigNum                   */
+    /*  Free the allocated memory for a BigNum                   */
     void (*Free)(struct BigNum*);
 
     /*  Display the BigNum                                       */
     void (*View)(struct BigNum*);
 
     /*  Setter for the sequence of digits
-        It also disallocate the former intSequence              */
+        It also dis-allocate the former intSequence              */
     void (*SetSequence)(struct BigNum*, int*);
 
     /* Setter for the size/length of the BigNum                 */
